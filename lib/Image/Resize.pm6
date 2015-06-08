@@ -139,7 +139,7 @@ multi sub resize-image(Cool $src-img, Cool $dst-img, $factor,
         :$no-resample, :$jpeg-quality) is export {
 
     Image::Resize.new($src-img).resize(
-            $dst-img, $factor, :$no-resample, :$jpeg-quality).clean();
+            $dst-img, $factor, :$no-resample, :$jpeg-quality);
 }
 
 =begin pod
